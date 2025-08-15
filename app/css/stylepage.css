@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    display: flex;
+    background-color: #f4f6f9;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+    width: 240px;
+    background: linear-gradient(180deg, #003366, #001f33);
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+}
+
+.sidebar h1 {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background 0.3s, padding-left 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: rgba(255,255,255,0.15);
+    padding-left: 20px;
+}
+
+.submenu-items {
+    display: none;
+    padding-left: 15px;
+    margin-top: 5px;
+}
+
+.submenu.open .submenu-items {
+    display: block;
+}
+
+
+
+/* ===== Conteúdo ===== */
+.content {
+    margin-left: 260px;
+    padding: 20px;
+    flex: 1;
+}
+
+.fa{
+    margin-left: 10px;
+
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}
